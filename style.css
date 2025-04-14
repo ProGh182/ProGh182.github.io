@@ -1,0 +1,439 @@
+body {
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../ProjetPortfolio/photo-1415889455891-23bbf19ee5c7.jpeg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    transition: filter 0.5s ease
+}
+
+#page-content{
+    transition: background-color 0.5s ease, filter 0.5s ease;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+header {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 0.5px;
+    box-shadow: grey 0px 5px 15px;
+    padding: 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+
+
+
+#hhh {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    gap: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    transition: font-size 0.5s ease, color 0.5s ease; 
+    transition: all 0.5s ease;
+    animation: fadeIn 0.5s forwards; 
+    animation-fill-mode: forwards; 
+
+}
+
+#hhh:hover{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+
+.hamid {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease; 
+}
+
+.hamid:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    text-decoration: none;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+#hhhh {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;;
+}
+
+i {
+    width: 100px;
+    size: 100px;
+}
+
+#about {
+    background-color: white;
+    height: 100%;
+    margin-top: 60px;
+    padding: 100px 500px 100px 100px;
+    font-size: larger;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: slideinleft 1s forwards;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+#siuu {
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    bottom: 20px;
+    border-radius: 15px;
+    box-shadow: darkgrey 0px 5px 15px;
+}
+
+
+#aziz{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left: 10px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 100px 100px 0px 100px;
+    border-radius: 50px;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: none;
+    color: white;
+    animation: slideinleft 1s forwards;
+
+}
+
+#hamidButton1{
+    background-color: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease; 
+    margin-left: 150px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+#hamidButton1:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: black 0px 5px 15px;
+    transition: all 0.1s ease; 
+
+}
+
+#formation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+    border-radius: 50px;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: none;
+    color: white;
+    animation: slideinleft 1s forwards;
+
+}
+
+#forma {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 100px 100px;
+    text-decoration-line: none;
+    text-decoration: none;
+
+}
+
+.arrow  {
+    width: 30px;
+    visibility: hidden;
+    opacity : 0;
+    transition: transform 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
+    
+}
+
+.school:hover .arrow {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    
+
+    
+}
+
+.school:hover {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 1);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.school {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.8);
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+#EFREI {
+    background-color: lightgray;
+    height: 100%;
+    margin: 0;
+    padding: 60px 60px 60px 60px;
+    display: none;
+    opacity: 0;
+    animation: slideInTop 0.5s ease forwards;
+}
+
+.EFREIbloc {
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px 50px 50px 50px;
+    font-size: 30px;
+}
+
+.EFREItext {
+    padding : 50px 50px 50px 400px;
+    font-size: 25px;
+}
+
+#imgEFREI {
+    position : absolute;
+    top: 100px;
+    left: 1200px;
+    width: 200px;
+}
+
+#ronaldo1 {
+    position: absolute;
+    top: 500px;
+    width: 300px;
+}
+
+#fnaf {
+    position: absolute;
+    top: 500px;
+    width: 300px;
+    left: 100px;
+}
+
+#chad {
+    position: absolute;
+    top: 450px;
+    width: 300px;
+    ;
+}
+
+#Harvard {
+
+    background-color: lightgray;
+    height: 100%;
+    margin: 0;
+    padding: 60px 60px 60px 60px;
+    display: none;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    animation: slideInTop 0.5s ease forwards;
+}
+
+#Columbia {
+    background-color: lightgray;
+    height: 100%;
+    margin: 0;
+    padding: 60px 60px 60px 60px;
+    display: none;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    animation: slideInTop 0.5s ease forwards;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes slideInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .kebab {
+    font-size: 100px;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgbAnimation 1s linear infinite;
+    justify-content: center;
+  }
+  
+  @keyframes rgbAnimation {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+
+
+
+#kbb {
+    background-color: antiquewhite;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kbb1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#leskheys {
+    width: 800px;
+}
+
+#hitmark {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+}
+
+#snoop {
+    position: absolute;
+    right: 500px;
+    top: 100px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideinleft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border: solid;
+    border-color: black;
+    position:static;
+    padding: 50px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+
+}
+
+.hmido {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.5s ease; 
+}
+
+#footerAA{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-left: 10px;
+}
+
+#footerBB {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left: 5px;
+}

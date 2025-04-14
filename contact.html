@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ProjetPortfolio/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="hhh">
+            <div><a href="../ProjetPortfolio/aziz.html" class="hamid">Accueil</a></div>
+            <div><a href="../ProjetPortfolio/experience.html" class="hamid">Experience</a></div>
+            <div><a href="../ProjetPortfolio/Contact.html" class="hamid">Contact</a></div>
+            <div><a href="../ProjetPortfolio/Formation.html" class="hamid">Formation</a></div>
+        </div>
+        <div id="hhhh">
+            <div><a href="https://www.tiktok.com/@lebronjamesofficial?lang=fr" class="hamid"><i class="fa-brands fa-tiktok"></i></a></div>
+            <div><a href="https://www.instagram.com/kingjames/" class="hamid"><i class="fa-brands fa-instagram" ></i></a></div>
+            <div><a href="https://x.com/KingJames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="hamid"><i class="fa-brands fa-x-twitter"> </i></a></div>
+            <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="hamid"><i class="fa-brands fa-youtube"></i></a></div>
+        </div>
+    </header>
+
+    
+    <div id="page-content">
+
+    </div>
+
+
+    <footer>
+        <div id="footerAA">
+          <a href="#" class="hmido">Accueil</a>
+          <a href="#" class="hmido">À propos</a>
+          <a href="#" class="hmido">Contact</a>
+          <a href="#" class="hmido">Mentions légales</a>
+        </div>
+        <div id="footerBB">
+          © 2025 MonSite. Tous droits réservés.
+        </div>
+      </footer>
+    </div>
+    
+    <script>
+  const hamidButtons = document.querySelectorAll('.hamid');
+  const pageContent = document.getElementById('page-content');
+
+  hamidButtons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+      pageContent.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+      pageContent.style.filter = 'brightness(50%)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      pageContent.style.backgroundColor = '';
+      pageContent.style.filter = 'brightness(100%)';
+    });
+  });
+
+  const button = document.getElementById('hamidButton1');
+  const section = document.getElementById('about');
+
+  button.addEventListener('click', () => {
+    section.style.display = 'block';
+    section.style.opacity = '0';
+    setTimeout(() => {
+      section.style.opacity = '1';
+    }, 10);
+  });
+      </script>
+</body>
+</html>

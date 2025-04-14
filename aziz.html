@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ProjetPortfolio/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="hhh">
+            <div><a href="../ProjetPortfolio/aziz.html" class="hamid">Accueil</a></div>
+            <div><a href="../ProjetPortfolio/experience.html" class="hamid">Experience</a></div>
+            <div><a href="../ProjetPortfolio/Contact.html" class="hamid">Contact</a></div>
+            <div><a href="../ProjetPortfolio/Formation.html" class="hamid">Formation</a></div>
+        </div>
+        <div id="hhhh">
+            <div><a href="https://www.tiktok.com/@lebronjamesofficial?lang=fr" class="hamid"><i class="fa-brands fa-tiktok"></i></a></div>
+            <div><a href="https://www.instagram.com/kingjames/" class="hamid"><i class="fa-brands fa-instagram" ></i></a></div>
+            <div><a href="https://x.com/KingJames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="hamid"><i class="fa-brands fa-x-twitter"> </i></a></div>
+            <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="hamid"><i class="fa-brands fa-youtube"></i></a></div>
+        </div>
+    </header>
+
+    <div id="page-content"> 
+    <section id="home">
+        <div id="cristiano">
+            <h1>Bienvenue dans mon portfolio! </h1>
+        </div>
+    </section>
+    <input type="button" value="Découvrir >"  id="hamidButton1">
+
+    <section id="about">
+        <h1>À propos de moi</h1>
+      
+        <p>
+          Je m'appelle Taha Baidou, et je suis graphiste indépendant. Ma passion pour le design graphique ne s’est pas révélée du jour au lendemain. Depuis mon plus jeune âge, j’ai toujours été attiré par l’esthétique des choses, par les détails que beaucoup ignorent. Un packaging bien conçu, une affiche dans la rue, une couverture d’album — tout était pour moi une source d’inspiration. C’est cette curiosité visuelle qui m’a naturellement conduit vers le monde du graphisme.
+        </p>
+      
+        <p>
+          Aujourd’hui, je me consacre à la création d’univers visuels qui marquent, qui parlent, qui racontent quelque chose. Mon travail va bien au-delà du simple aspect esthétique. Je conçois des identités visuelles complètes, des affiches, des brochures, des interfaces web, du contenu pour les réseaux sociaux, et plus encore. Chaque projet est une rencontre, une nouvelle histoire à construire avec soin, cohérence et originalité.
+        </p>
+      
+        <p>
+          Je travaille principalement avec des outils comme Adobe Illustrator, Photoshop, InDesign, After Effects ou Figma. Mais au-delà des logiciels, ce qui compte pour moi, c’est l’idée, le concept, la direction artistique. Le design, c’est avant tout une manière de penser, de voir le monde, d’interpréter les besoins et d’y répondre visuellement.
+        </p>
+      
+        <p>
+          Ce que j’aime le plus dans ce métier, c’est sa diversité. Aucun jour ne se ressemble. Chaque client a une vision, une identité, un univers à exprimer. J’ai eu l’opportunité de collaborer avec des profils variés : des jeunes entrepreneurs, des artistes, des associations, des marques en plein essor. Cette richesse humaine et créative est ce qui rend mon quotidien aussi vivant et stimulant.
+        </p>
+      
+        <p>
+          En dehors du design, je m’inspire de tout ce qui m’entoure. L’architecture, la photographie, la musique, les affiches de cinéma, la culture web, les vieux magazines, les rues de ma ville… Tout est prétexte à nourrir mon œil et mon imagination. Je suis constamment en veille, toujours curieux des nouvelles tendances, des idées innovantes, des approches inattendues.
+        </p>
+      
+        <p>
+          Si je devais résumer ma manière de travailler, je dirais qu’elle repose sur l’écoute, la recherche, l’intention et le sens du détail. J’aime comprendre profondément ce que veut transmettre un projet, puis lui donner une forme qui soit à la fois impactante, authentique et alignée avec ses valeurs.
+        </p>
+      
+        <p>
+          Mon but est simple : créer du design qui a du sens. Et si ce que tu viens de lire te parle, alors je serais ravi de collaborer avec toi.
+        </p>
+
+        <img src="../ProjetPortfolio/0x0-3.jpg" alt="siuu" id="siuu">
+      </section>
+      
+
+    <footer>
+        <div id="footerAA">
+          <a href="#" class="hmido">Accueil</a>
+          <a href="#" class="hmido">À propos</a>
+          <a href="#" class="hmido">Contact</a>
+          <a href="#" class="hmido">Mentions légales</a>
+        </div>
+        <div id="footerBB">
+          © 2025 MonSite. Tous droits réservés.
+        </div>
+      </footer>
+    </div>
+    
+    <script>
+  const hamidButtons = document.querySelectorAll('.hamid');
+  const pageContent = document.getElementById('page-content');
+
+  hamidButtons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+      pageContent.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+      pageContent.style.filter = 'brightness(50%)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      pageContent.style.backgroundColor = '';
+      pageContent.style.filter = 'brightness(100%)';
+    });
+  });
+
+  const button = document.getElementById('hamidButton1');
+  const section = document.getElementById('about');
+
+  button.addEventListener('click', () => {
+    section.style.display = 'block';
+    section.style.opacity = '0';
+    setTimeout(() => {
+      section.style.opacity = '1';
+    }, 10);
+  });
+      </script>
+</body>
+</html>
